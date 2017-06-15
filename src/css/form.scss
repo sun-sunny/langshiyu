@@ -1,0 +1,81 @@
+/* ----------------------------------------------------------------
+	表单
+-----------------------------------------------------------------*/
+form{
+  .groups{
+    margin-bottom: 10px;
+    background: nth($color_sim,10);
+    @extend .border-top;
+    @extend .border-bottom;
+    &.gap{
+      margin-bottom: 30px!important;
+    }
+    .group{
+      font-size: 14px;
+      @extend .border-bottom;
+      height: 45px;
+      line-height: 45px;
+      &:last-of-type{
+        border: none;
+      }
+      &>*{
+        font-size: inherit;
+      }
+      label{
+        width: 25%;
+        display: inline-block;
+        float: left;
+      }
+      input{
+        border: none;
+        background: none;
+        width: 60%;
+        height: 100%;
+        float: right;
+        text-align: right;
+        margin-right: 25px;
+      }
+      .btn{
+        width: 25%;
+        height: 100%;
+        font-size: 12px;
+        line-height: 18px;
+        &+input{
+          width: 40%;
+          margin-right: 35px;
+        }
+      }
+      .iconfont{
+        width: 5%;
+        display: inline-block;
+        float: right;
+        font-size: 20px;
+        position: absolute;
+        right: $bar;
+        &.icon-triange-right{
+          color: nth($color_sim,3);
+        }
+        &.icon-date{
+          color: $color_warning;
+        }
+      }
+    }
+  }
+  &.blockform{
+    @extend .box;
+    .groups{
+      .group{
+       input{
+         float: left;
+         text-align: left;
+         width: 100%;
+         margin: 0;
+       }
+        .icon-triange-right{
+          position: absolute;
+          right: $bar;
+        }
+      }
+    }
+  }
+}

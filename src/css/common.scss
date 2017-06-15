@@ -1,0 +1,301 @@
+/* ----------------------------------------------------------------
+	零散页面通用部分
+-----------------------------------------------------------------*/
+header{
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  padding: 8px $bar;
+  background: #1a1a1f;
+  transform: translateZ(0);
+  -webkit-transform:translateZ(0);
+  .logo{
+    height: 100%;
+    width: auto;
+  }
+  .navbar{
+    color: $color_warning;
+    font-size: 24px;
+    width: 50px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+}
+//总导航
+.navmain{
+  background: #1a1a1f;
+  position: fixed;
+  right: 0px;
+  top:50px;
+  z-index:101;
+  opacity: .95;
+  padding-left: 50px;
+  li{
+    line-height: 40px;
+    color: nth($color_sim,10);
+    text-align: left;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    &.cur{
+      color: $color_warning;
+      &:before{
+        content: "- ";
+        position: absolute;
+        left: -20px;
+        font-weight: bolder;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+#main{
+  @at-root #header.fixed+#main{
+    padding-top: 50px;
+  }
+}
+#project{
+  #location{
+    height: 50px;
+    line-height: 50px;
+    background: white;
+    z-index: 2;
+    @extend .border-bottom;
+    .fl{
+      width: 100%;
+      .iconfont{
+        color:$color_warning;
+        font-size: 18px;
+        position: absolute;
+        left:25px;
+      }
+      input{
+        width: 100%;
+        padding-left: 20px;
+        font-size: 18px;
+        border: none!important;
+      }
+    }
+    .fr{
+      position: absolute;
+      right: $bar;
+    }
+  }
+}
+
+#book{
+  background: nth($color_sim,8);
+  .btnbox{
+    text-align: center;
+    font-size: 18px;
+    &>*{
+      line-height: 100px;
+      vertical-align: text-bottom;
+    }
+    .iconfont{
+      color: $color_warning;
+      font-size: 32px;
+    }
+  }
+}
+
+nav{
+  z-index: 99;
+  background: nth($color_sim,10);
+  margin-bottom: 25px;
+  ul{
+    @extend .flex-box;
+    height: 60px;
+    line-height: 60px;
+    @extend .border-bottom;
+    li{
+      @extend .flex-inner;
+      /*@extend .flex-1;*/
+      text-align: center;
+      font-size: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      text-align: center;
+     -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      text-align: center;
+      &.cur{
+        position: relative;
+        margin-bottom: -1px;
+        border-bottom: 3px solid $color_warning;
+      }
+    }
+  }
+}
+
+#projectDetail{
+  .icon-pageleft,.icon-pageright{
+    border: 1px solid nth($color_sim,4);
+    padding: 3px;
+    font-size: larger;
+    color: nth($color_sim,2);
+    &.unable{
+      cursor: not-allowed;
+      opacity: .3;
+    }
+  }
+  .fullscreen{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    z-index: 9;
+    color: nth($color_sim,10);
+    font-size: 24px;
+  }
+  .price{
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    z-index: 9;
+    background: rgba(0,0,0,nth($opacity,6));
+    color: $color_warning;
+    padding: 8px 10px;
+    margin: 0px;
+    font-size: 12px;
+  }
+  .fix-bottom{
+    background: nth($color_sim,10);
+    z-index: 9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+img#mediaplayer_logo{
+  opacity: 0!important;
+}
+
+//插件修改
+.swiper-button-white{
+  width: 20px!important;
+  height: 30px!important;
+  margin-top: -15px!important;
+  background-size:auto auto!important;
+  z-index: 9999!important;
+}
+
+#index{
+  .bannerbox{
+    .bannermask{
+      position: absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+    }
+    .box{
+      width: 100%;
+      position:fixed;
+      bottom:40px;
+      *{
+        color: nth($color_sim,10);
+      }
+      .shortline{
+        background: nth($color_sim,10);
+      }
+      h3{
+        p{
+          font-size: inherit;
+        }
+      }
+    }
+    .swiper-pagination{
+      bottom: 40px;
+      .swiper-pagination-bullet{
+        width: 20px;
+        height: 3px;
+        background: nth($color_sim,10);
+        border-radius: 0px;
+        &.swiper-pagination-bullet-active{
+          height: 7px;
+          position: relative;
+          top:3px;
+        }
+      }
+    }
+  }
+}
+
+//百度地图
+.map{
+  width: 100%;
+  height: 250px;
+  .BMap_bubble_title,.BMap_bubble_content{
+    font-size:12px!important;
+  }
+  img{
+    height:auto!important;
+  }
+}
+
+//flavr
+.flavr-outer{
+  background: nth($color_sim,10)!important;
+  .flavr-content{
+    color: nth($color_sim,2)!important;
+  }
+  .flavr-button{
+    color: nth($color_sim,10)!important;
+    &.default,&.warning{
+      background: $color_warning!important;
+    }
+    &.grey{
+      background: nth($color_sim,4)!important;
+    }
+  }
+}
+
+
+//背景图swiper
+.swiper-bg {
+  .swiper-slide {
+    background-size: 100% auto;
+    background-position: center center;
+  }
+}
+#index{
+  .swiper-bg {
+    .swiper-slide {
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
+
+/*隐藏域*/
+.thumbnail{
+  display: block;
+  height: 1px;
+  width: 100%;
+  &.disappear{
+    width: 1px;
+    height: 1px;
+    position: fixed;
+    left: -1000px;
+    top: -10000px;
+  }
+}
+
+/* ----------------------------------------------------------------
+	通用化处理
+-----------------------------------------------------------------*/
+//因为safari全屏底部会留白，以后用flavr的fullscreen方法就可以了
+.fullscreen{
+  display: none;
+}

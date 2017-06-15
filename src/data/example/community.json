@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "message": "社区json",
+  "content": [
+    {
+      "id":"1",
+      "title":"新青年，一起嗨",
+      "name":"品牌活动",
+      "image":["img/example/community/01/community_banner_banner01.png"],
+      "intro":"本活动全国门店均可参加，只要在所入住的朗诗寓与隔壁邻居合影并认证房间号，参选“最有创意合影作品”，也许会发现意想不到的惊喜！"
+    },
+    {
+      "id":"2",
+      "title":"社区活动<b>调查派</b>",
+      "name":"门店活动",
+      "image":["img/example/community/02/community_banner_banner01.png"],
+      "intro":"破冰趴、鲜花DIY、楼顶BBQ、桌球大赛、狼人杀、枕头大战，哪一个才是你的最爱？"
+    }
+  ]
+}

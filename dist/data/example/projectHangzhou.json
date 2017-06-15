@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "message": "项目列表json",
+  "content": [
+    {
+      "id":"31",
+      "name":"文晖店",
+      "image":[
+        "img/example/project/hangzhou/01/project_room_room01_banner01.png",
+        "img/example/project/hangzhou/01/project_room_room01_banner02.png",
+        "img/example/project/hangzhou/01/project_public_public01.png"
+      ],
+      "location":"杭州市下城区机场路里街99号，地铁一号线闸弄口站。",
+      "price":"待更新",
+      "ismore":"1"
+    }
+  ]
+}

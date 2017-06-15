@@ -1,0 +1,56 @@
+{
+  "status": "success",
+  "message": "预定数据json",
+  "content": {
+    "location":[
+      {
+        "id":"AREA2",
+        "name":"上海"
+      },
+      {
+        "id":"AREA4",
+        "name":"南京"
+      },
+      {
+        "id":"AREA6",
+        "name":"杭州"
+      }
+    ],
+    "project":[
+      {
+        "id":"0",
+        "name":"南京新街口店"
+      },
+      {
+        "id":"1",
+        "name":"南京迈皋桥店"
+      },
+      {
+        "id":"0",
+        "name":"上海宁国路店"
+      },
+      {
+        "id":"1",
+        "name":"上海长风公园店"
+      },
+      {
+        "id":"0",
+        "name":"杭州闸弄口店"
+      }
+    ],
+    "roomtype":[
+      {
+        "id":"_LRD1",
+        "name":"一室一厅"
+      },
+      {
+        "id":"_LRD2",
+        "name":"二室一厅"
+      },
+      {
+        "id":"_LRD3",
+        "name":"三室一厅"
+      }
+    ]
+  }
+}

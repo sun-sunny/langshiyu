@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>预约看房</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="author" content="">
+    <meta name="keywords" content="预约看房">
+    <meta name="description" content="预约看房">
+    <!--功能  ios,blackberry 拨号-->
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_45zcd52jsu6ry66r.css">
+    <link rel="stylesheet" href="../lib/mobiscroll.custom-3.0.0-beta6.min.css">
+    <!-- 增加弹出显示插件-->
+	<link rel="stylesheet" href="../lib/animate.css">
+	<link rel="stylesheet" href="../lib/flavr.css">
+</head>
+<body id="book" data-page="project">../
+<section id="main">
+    <form action="" id="bookform" method="post" enctype="multipart/form-data">
+        <div class="groups">
+            <div class="group container">
+                <label>城市</label>
+                <i class="iconfont icon-triange-right"></i>
+                <select id="city">
+                </select>
+                <span class="clear"></span>
+            </div>
+            <div class="group container">
+                <label>项目</label>
+                <i class="iconfont icon-triange-right"></i>
+                <select id="project">
+                    <option value ="1">请选择</option>
+                    <!-- <option value ="1">南京新街口店</option>
+                    <option value ="2">南京迈皋桥店</option>
+                    <option value="3">上海宁国路店</option>
+                    <option value="4">上海长风公园店</option>
+                    <option value="5">杭州文晖店</option> -->
+                </select>
+                <span class="clear"></span>
+            </div>
+            <!--
+            <div class="group container">
+               <label>户型</label>
+               <i class="iconfont icon-triange-right"></i>
+               <select id="roomtype">
+                   <option value ="_LRD1">一室一厅</option>
+               </select>
+               <span class="clear"></span>
+           </div>
+            -->
+        </div>
+        <div class="groups">
+            <div class="group container">
+                <label>姓名</label>
+                <input type="text" id="name" name="name" placeholder="请填写您的姓名" required="required">
+                <span class="clear"></span>
+            </div>
+            <div class="group container">
+                <label>性别</label>
+                <i class="iconfont icon-triange-right"></i>
+                <select id="sex">
+                    <option value="_A41">男</option>
+                    <option value="_A42">女</option>
+                </select>
+                <span class="clear"></span>
+            </div>
+        </div>
+        <div class="groups">
+            <div class="group container">
+                <label>联系方式</label>
+                <input type="text" id="phone" name="phone" placeholder="请填写您的电话" required="required">
+                <span class="clear"></span>
+            </div>
+            <div class="group container">
+                <label>验证码</label>
+                <div class="btn btn-black btn-br-no btn-sm fr row code">获取 <br> 验证码</div>
+                <input type="text" id="code" name="code" placeholder="请填写验证码" required="required">
+                <span class="clear"></span>
+            </div>
+        </div>
+        <div class="groups gap">
+            <div class="group container">
+                <label>看房时间</label>
+                <i class="iconfont icon-date"></i>
+                <input type="text" id="time" name="time" placeholder="" required="required">
+                <span class="clear"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="btn btn-warning btn-br-no btn-block booking">提交</div>
+        </div>
+    </form>
+
+    <div class="container btnbox">
+        <i class="iconfont icon-phone-circle"></i>
+        <a href="tel:025-69653760">预约电话：025-69653760</a>
+    </div>
+</section>
+<script type="text/javascript" src="../lib/jquery-2.1.4.min.js" ></script>
+<script type="text/javascript" src="../js/common.js" ></script>
+<script type="text/javascript" src="../js/book.js" ></script>
+<script type="text/javascript" src="../lib/jquery.cookie.js"></script>
+<script type="text/javascript" src="../lib/mobiscroll.custom-3.0.0-beta6.js" ></script>
+<script type="text/javascript" src="../js/public.js"></script>
+<!-- 增加弹出显示插件-->
+<script type="text/javascript" src="../lib/flavr.min.js" ></script>
+<script>
+    mobiscroll.settings = {
+        theme: localStorage.theme,
+        lang: 'zh',
+        display:"bottom",
+        dateFormat: 'yy-mm-dd',
+        setText: '', //确认按钮名称
+        cancelText: '',
+        onItemTap: function (event, inst) {
+            $('.mbsc-fr-btn0.mbsc-fr-btn-e.mbsc-fr-btn').click();
+        }
+    };
+    $('#city,#project,#roomtype,#sex').mobiscroll({
+        theme: localStorage.theme,
+        lang: 'zh',
+        display:"bottom",
+        dateFormat: 'yy-mm-dd',
+        setText: '', //确认按钮名称
+        cancelText: '',
+        onItemTap: function (event, inst) {
+            $('.mbsc-fr-btn0.mbsc-fr-btn-e.mbsc-fr-btn').click();
+        }
+    }).select({
+        minWidth: 200
+    });
+    var now = new Date(),
+        minDate = new Date(now.getFullYear(), now.getMonth(), now.getDate()),
+        maxDate = new Date(now.getFullYear() + 1, now.getMonth(), now.getDate()-1);
+        nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() ;
+
+    $('#time').mobiscroll().date({
+        setText: '', //确认按钮名称
+        cancelText: '',
+        min:new Date(now.getFullYear(), now.getMonth(), now.getDate()),
+        max:maxDate,
+    });
+    $('#time').val(nowDate)
+</script>
+</body>
+</html>

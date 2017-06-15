@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "message": "表单静态数据json",
+  "content": {
+    "sex":[
+      {
+        "id":"_A41",
+        "name":"男"
+      },
+      {
+        "id":"_A42",
+        "name":"女"
+      }
+    ]
+  }
+}

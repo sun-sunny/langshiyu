@@ -1,0 +1,41 @@
+{
+  "status": "success",
+  "message": "首页json",
+  "content": [
+    {
+      "id":"1",
+      "url":"",
+      "title":"<p>嘿，你有一间房子等待入住</p>",
+      "intro":"思考让人智慧，阅读使人安静，居所令人安心，<br />\"寓\"所不同，你的得意人生！",
+      "image":"img/index_banner_banner01.jpg"
+    },
+    {
+      "id":"2",
+      "url":"",
+      "title":"<p>圈里圈外，找寻年轻人共同的梦</p>",
+      "intro":"住在哪里，和谁住一起，一样重要！<br />放下手机，走出房门，“寓”见“另一群自己”。",
+      "image":"img/index_banner_banner02.jpg"
+    },
+    {
+      "id":"3",
+      "url":"",
+      "title":"<p>提供公寓服务，我们是走心的</p>",
+      "intro":"帮剁手族收快递，为差旅族关窗子，<br />给晚归族留一盏温暖的灯……<br />贴心服务，从预约看房开始贯穿始终。",
+      "image":"img/index_banner_banner03.jpg"
+    },
+    {
+      "id":"4",
+      "url":"",
+      "title":"<p>绿色环保行，与城市同行</p>",
+      "intro":"骑着单车穿过城市，感受每一缕风，<br />悠悠散步在大街小巷，倾听城市心声。<br />环保与生活同步。",
+      "image":"img/index_banner_banner04.jpg"
+    },
+    {
+      "id":"5",
+      "url":"",
+      "title":"<p>朗诗寓欢乐迎新季，精彩一夏</p>",
+      "intro":"8大城市，14家门店，预约ing！<br />选择一间适合生活的房子，作为梦的起点……",
+      "image":"img/index_banner_banner05.jpg"
+    }
+  ]
+}

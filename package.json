@@ -1,0 +1,33 @@
+{
+  "name": "landsea",
+  "version": "1.0.0",
+  "dependencies": {
+    "browser-sync": "2.10.0",
+    "browsersync-ssi": "0.2.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "2.1.0",
+    "gulp-zip": "^3.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "2.10.0",
+    "browsersync-ssi": "0.2.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-zip": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {},
+  "pre-push": []
+}

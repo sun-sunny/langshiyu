@@ -1,0 +1,43 @@
+{
+  "status": "success",
+  "message": "项目列表json",
+  "content": [
+    {
+      "id":"11",
+      "name":"宁国路店",
+      "image":[
+        "img/example/project/shanghai/01/project_room_room01_banner01.png",
+        "img/example/project/shanghai/01/project_room_room01_banner02.png",
+        "img/example/project/shanghai/01/project_room_room01_banner03.png",
+        "img/example/project/shanghai/01/project_room_room02_banner01.png",
+        "img/example/project/shanghai/01/project_room_room02_banner02.png",
+        "img/example/project/shanghai/01/project_room_room02_banner03.png",
+        "img/example/project/shanghai/01/project_room_room03_banner01.png",
+        "img/example/project/shanghai/01/project_room_room03_banner02.png",
+        "img/example/project/shanghai/01/project_room_room03_banner03.png",
+        "img/example/project/shanghai/01/project_public_public01.png",
+        "img/example/project/shanghai/01/project_public_public02.png",
+        "img/example/project/shanghai/01/project_public_public03.png"
+      ],
+      "location":"上海市黄兴路18号，地铁12号线宁国路站2号口出",
+      "price":"待更新",
+      "ismore":"1"
+    },
+    {
+      "id":"12",
+      "name":"长风公园店",
+      "image":[
+        "img/example/project/shanghai/02/project_room_room01_banner01.png",
+        "img/example/project/shanghai/02/project_room_room02_banner01.png",
+        "img/example/project/shanghai/02/project_public_public01.png",
+        "img/example/project/shanghai/02/project_public_public02.png",
+        "img/example/project/shanghai/02/project_public_public03.png",
+        "img/example/project/shanghai/02/project_public_public04.png",
+        "img/example/project/shanghai/02/project_public_public05.png"
+      ],
+      "location":"上海市云岭东路599弄12号，普陀区中环线内",
+      "price":"待更新",
+      "ismore":"1"
+    }
+  ]
+}

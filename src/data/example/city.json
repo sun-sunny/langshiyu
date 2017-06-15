@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "message": "城市列表json",
+  "content": [
+    {
+      "id":"AREA2",
+      "name":"上海"
+    },
+    {
+      "id":"AREA4",
+      "name":"南京"
+    },
+    {
+      "id":"AREA6",
+      "name":"杭州"
+    }
+  ]
+}

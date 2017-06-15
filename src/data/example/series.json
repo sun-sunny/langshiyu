@@ -1,0 +1,30 @@
+{
+  "status": "success",
+  "message": "产品系列列表json",
+  "content": [
+    {
+      "id":"1",
+      "name":"青年公寓",
+      "image":"img/example/series/entrylevel/series_banner_banner01.png",
+      "intro":"青年公寓，个性生活"
+    },
+    {
+      "id":"2",
+      "name":"白领公寓",
+      "image":"img/example/series/whitecollar/series_banner_banner01.png",
+      "intro":"独立空，兴趣社交"
+    },
+    {
+      "id":"3",
+      "name":"精品公寓",
+      "image":"img/example/series/boutique/series_banner_banner02.png",
+      "intro":"配套完善，品质生活"
+    },
+    {
+      "id":"4",
+      "name":"服务式公寓",
+      "image":"img/example/series/server/series_banner_banner01.png",
+      "intro":"私密居家氛围，标准化精心服务"
+    }
+  ]
+}

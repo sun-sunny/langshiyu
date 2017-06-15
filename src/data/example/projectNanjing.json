@@ -1,0 +1,36 @@
+{
+  "status": "success",
+  "message": "项目列表json",
+  "content": [
+    {
+      "id":"21",
+      "name":"新街口店",
+      "image":[
+        "img/example/project/nanjing/01/project_room_room01_banner01.png",
+        "img/example/project/nanjing/01/project_room_room02_banner01.png",
+        "img/example/project/nanjing/01/project_room_room03_banner01.png",
+        "img/example/project/nanjing/01/project_public_public01.png",
+        "img/example/project/nanjing/01/project_public_public02.png"
+      ],
+      "location":"秦淮区中山东路56号新华书店大厦（近洪武路）",
+      "price":"待更新",
+      "ismore":"1"
+    },
+    {
+      "id":"22",
+      "name":"迈皋桥店",
+      "image":[
+        "img/example/project/nanjing/02/project_room_room01_banner01.png",
+        "img/example/project/nanjing/02/project_room_room02_banner01.png",
+        "img/example/project/nanjing/02/project_room_room03_banner01.png",
+        "img/example/project/nanjing/02/project_room_room04_banner01.png",
+        "img/example/project/nanjing/02/project_public_public01.png",
+        "img/example/project/nanjing/02/project_public_public02.png",
+        "img/example/project/nanjing/02/project_public_public03.png"
+      ],
+      "location":"栖霞区华电路1号万谷智慧生活斜对面",
+      "price":"待更新",
+      "ismore":"1"
+    }
+  ]
+}

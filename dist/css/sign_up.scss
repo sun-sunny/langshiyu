@@ -1,0 +1,156 @@
+@charset "UTF-8";
+$scale:28;
+$img:"../img/";
+html,body{
+    margin:0;
+    padding:0;
+    max-width:640px;
+    margin:0 auto;
+    min-width:320px;
+}
+*{
+    font-family: "PingFang SC", "Microsoft Yahei", "Droid Sans", Helvetica, Arial, sans-serif;
+}
+.main{
+    // input[placeholder], [placeholder], *[placeholder] { 
+    //     color:#c5c5c5 !important; 
+    // }
+    position: relative;
+    margin-top:50px;
+    .top{
+        position: relative;
+        padding:98rem/$scale 0 37rem/$scale 0;
+        .logo{
+            background: url("../img/icon.png") no-repeat center;
+            width: 153rem/$scale;
+            height: 158rem/$scale;
+            margin:0 auto;
+            background-size:150rem/$scale  164rem/$scale;
+        }
+    }
+    .content{
+        position: relative;
+        margin-top:4.89286rem;
+        padding:0 25rem/$scale;
+        .container{
+            // width: 590rem/$scale;
+            // height: 70rem/$scale;
+            margin:0 auto;
+            padding:0 0;
+            margin-bottom:30rem/$scale;
+            display: block;
+            &.checknum{
+                display: block;
+                height: 70rem/$scale;
+                width:100%;
+                float:left;
+                input{
+                    width:354rem/$scale;
+                    display: block;
+                    float: left;
+                }
+                div{
+                    &.timenum{
+                        display: inline-block;
+                        width: 180rem/$scale;
+                        height: 70rem/$scale;
+                        margin-left:22rem/$scale;
+                        border: 1px solid #212121;
+                        border-radius: 5px 5px;
+                        float: right;
+                        margin-top:2rem/$scale;
+                        line-height: 70rem/$scale;
+                        text-align: center;
+                        color:#3b3b3b;
+                        font-size: 26rem/$scale;
+                    }
+                }
+            }
+            .btn_col{
+                display: inline-block;
+                margin-top:50rem/$scale;
+                height: 70rem/$scale;
+                width:100%;
+                font-size: 26rem/$scale;
+                background-color:#c58d5d;
+                color:#fff;
+                padding-left:22rem/$scale;
+                border-radius: 5px 5px; 
+                text-align: center;
+                line-height: 70rem/$scale;
+            }
+            .btn_vcol{
+                display: inline-block;
+                margin-top:50rem/$scale;
+                height: 70rem/$scale;
+                width:100%;
+                font-size: 26rem/$scale;
+                color:#9b9b9b;
+                padding-left:22rem/$scale;
+                border-radius: 5px 5px; 
+                text-align: center;
+                line-height: 70rem/$scale;
+                
+            }
+            a.btn_vcol:before{
+                content:"";
+                border-top: 1px solid #dcdcdc;
+                width: 131rem/$scale;
+                height:1px;
+                display: inline-block;
+                margin-right:20rem/$scale;
+            }
+            a.btn_vcol:after{
+                content:"";
+                border-top: 1px solid #dcdcdc;
+                width: 131rem/$scale;
+                height:1px;
+                display: inline-block;
+                margin-left:20rem/$scale;
+            }
+            input{
+                margin-top:2rem/$scale;
+                // width: 590rem/$scale;
+                height: 70rem/$scale;
+                width:100%;
+                font-size: 26rem/$scale;
+                border:1px solid #e6e6e6;
+                padding-left:22rem/$scale;
+                border-radius: 5px 5px;
+            }
+        }
+    }
+}
+::-webkit-input-placeholder{color:#c5c5c5;}
+::-moz-placeholder{color:#c5c5c5;}
+:-moz-placeholder{color:#c5c5c5;}
+@media screen and (min-width:320px){
+    html{
+        font-size:14px
+        }
+}
+@media screen and (min-width:360px){
+    html{
+        font-size:16px
+        }
+}
+@media screen and (min-width:400px){
+    html{
+        font-size:18px
+        }
+}
+@media screen and (min-width:440px){
+    html{
+    font-size:20px
+    }
+}
+@media screen and (min-width:480px){
+    html{
+        font-size:22px
+        }
+}
+@media screen and (min-width:640px){
+    html{
+        font-size:28px
+        }
+}
